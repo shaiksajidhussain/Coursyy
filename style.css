@@ -1,21 +1,25 @@
+
 * {
     margin: 0px;
     padding: 0px;
-    font-family: Inter;    
+    font-family: Inter;
+    
+    
 }
+
 :root {
-    --main-color:#17ACAC;
+    --main-color: #007E7E;
 }
 
 /* Header starts */
-.header .nav-item{
-    margin: auto 2rem;
+.header .nav-item {
+    margin: auto 1rem;
 }
 
 .header .nav-item a {
     text-decoration: none;
     color: black;
-    font-weight:400;
+    font-weight: 400;
 }
 
 .header .title {
@@ -31,26 +35,43 @@
     border: none;
 }
 
-/* Header ends */
-
-
 /* Hero Section starts */
-
-.search input{
-    
+.search input {
     width: 500px;
     border-radius: 15px;
     border: 2px solid #339C9C;
     height: 40px;
-    
 }
 
-.search{
+.search {
     display: flex;
     justify-content: center;
     align-items: center;
     height: 80px;
+}
+
+
+/* section1 */
+
+.section1 button {
+    position: relative;
+    left: 300px;
+    top: -50px;
+    border-radius: 7px;
+    border: none;
+    height: 40px;
+    padding: 5px 20px ;
+    background-color: #0E8585;
+    color: white;
+    font-weight:700;
     
 }
 
-/* Hero Section ends */
+.hero h2{
+    color: var(--main-color);
+font-size: 30px;
+font-style: normal;
+font-weight: 700;
+line-height: normal;
+text-transform: capitalize;
+}
