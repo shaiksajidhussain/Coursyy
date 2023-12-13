@@ -50,23 +50,7 @@
     height: 80px;
 }
 
-
-/* section1 */
-
-.section1 button {
-    position: relative;
-    left: 300px;
-    top: -50px;
-    border-radius: 7px;
-    border: none;
-    height: 40px;
-    padding: 5px 20px ;
-    background-color: #0E8585;
-    color: white;
-    font-weight:700;
-    
-}
-
+/* h2text starts*/
 .hero h2{
     color: var(--main-color);
 font-size: 30px;
@@ -75,3 +59,130 @@ font-weight: 700;
 line-height: normal;
 text-transform: capitalize;
 }
+
+/* h2text ends*/
+
+
+/* section1 */
+
+.container1 button{
+   
+    border-radius: 7px;
+    border: none;
+    height: 40px;
+    padding: 5px 20px ;
+    background-color: #0E8585;
+    color: white;
+    font-weight:700;
+    width: 150px;
+    justify-self: center;
+    align-self:center;
+   
+   
+    
+}
+.hero .container1{
+   background-image: url("https://static.vecteezy.com/system/resources/previews/001/937/601/original/online-education-application-learning-worldwide-on-computer-mobile-website-background-social-distance-concept-the-classroom-training-course-library-illustration-flat-vector.jpg");
+    background-size:cover;
+    width: 99vw;
+    opacity: 1;
+    background-position: no-repeat;
+}
+
+
+
+.hero .container1 {
+
+    
+    
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    justify-content: center;
+    
+
+}
+
+
+@media (max-width: 768px) {
+    
+    .hero .container1 {
+
+     
+        
+        display: grid;
+        grid-template-columns: repeat(1,1fr);
+        justify-content:center;
+        align-items: center;
+        flex-direction: row-reverse;
+    
+    }
+    .hero .container1 svg{
+        width: 300px;
+        height: 300px;
+    }
+    .hero h2{
+    color: var(--main-color);
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 700;
+    
+    }
+
+
+}
+
+/* section1 ends */
+
+
+
+
+/* sponsersection starts */
+
+
+    .container .sponsers{
+    
+        display: flex;
+        justify-content:space-between;
+        align-items: center;
+        
+    }
+    
+    .container .sponsers img{
+        height: 100px;
+    
+    }
+  
+    .container .sponsers #freecourses{
+        height: 30px;
+    }
+    .container .sponsers #real{
+        height: 30px;
+    }
+
+
+
+    @media (max-width: 768px) {
+        .container .sponsers img{
+            height: 30px;
+        
+        }
+        .container .sponsers svg{
+            height: 30px;
+        
+        }
+        /* sponsersection ends */
+    
+        .container .sponsers #freecourses{
+            height: 10px;
+        }
+        .container .sponsers #real{
+            height: 10px;
+        }
+    
+        
+    }
+
+      /* sponsersection ends */
+
+
+
