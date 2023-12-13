@@ -3,6 +3,9 @@
     padding: 0px;
     font-family: Inter;    
 }
+:root {
+    --main-color:#17ACAC;
+}
 
 /* Header starts */
 .header .nav-item{
@@ -16,7 +19,7 @@
 }
 
 .header .title {
-    color: #17ACAC;
+    color: var(--main-color);
     font-weight: 200;
     font-size: 40px;
     text-transform: capitalize;
