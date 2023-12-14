@@ -11,17 +11,15 @@
     --main-color: #007E7E;
 }
 
-/* Header starts */
+/*********************************************** Header Styles **************************************************/
 .header .nav-item {
     margin: auto 1rem;
 }
-
 .header .nav-item a {
     text-decoration: none;
     color: black;
     font-weight: 400;
 }
-
 .header .title {
     color: var(--main-color);
     font-weight: 200;
@@ -30,258 +28,253 @@
     text-decoration: none;
     align-items: center;
 }
-
 .header select {
     border: none;
 }
 
-/* Hero Section starts */
-.search input {
-    width: 500px;
-    border-radius: 15px;
-    border: 2px solid #339C9C;
-    height: 40px;
-    
-}
-
-.search {
+/*********************************************** Hero Styles **************************************************/
+.hero {
+    background-image: url(./Images/herobg.png);
+    background-size: cover;
+    background-position: no-repeat;
+    width: 100%;
+    height: 70vh;
+    opacity: 1;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);    
+} 
+.hero .container1 {
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
-    height: 80px;
+    position: relative;
+    left: 125px;
+    bottom: 75px;
 }
-
-/* h2text starts*/
-.hero h2{
-    color: var(--main-color);
-font-size: 30px;
-font-style: normal;
-font-weight: 700;
-line-height: normal;
-text-transform: capitalize;
+.hero svg{
+    width: 500px;
+    height: 410px;
+    position: relative;
+    left: 100px;
+    top: 100px;
 }
-
-/* h2text ends*/
-
-
-/* section1 */
-
+.container1 h2 {
+    color: white;
+    font-size: 30px;
+    font-weight: 700;
+    text-transform: capitalize;
+    color: white;
+    text-shadow: 0 0.5px 0 #ccc,
+                    0 1px 0 #c9c9c9,
+                    0 1.5px 0 #bbb,
+                    0 2px 0 #b9b9b9,
+                    0 2.5px 0 #aaa,
+                    0 6px 1px rgba(0,0,0,.1),
+                    0 0 5px rgba(0,0,0,.1),
+                    0 1px 3px rgba(0,0,0,.3),
+                    0 3px 5px rgba(0,0,0,.2),
+                    0 5px 10px rgba(0,0,0,.25),
+                    0 10px 10px rgba(0,0,0,.2),
+                    0 20px 20px rgba(0,0,0,.15);
+}
+.container1 .search input {
+    width: 400px;
+    border-radius: 15px;
+    border: 2px solid var(--main-color);
+    height: 40px;
+    padding: 10px;
+}
+.container1 .search input:focus {
+    outline: none;
+}
+.container1 .search {
+    padding: 3rem;
+}
 .container1 button{
-   
     border-radius: 7px;
     border: none;
     height: 40px;
     padding: 5px 20px ;
     background-color: #0E8585;
     color: white;
-    font-weight:700;
+    font-weight: bold;
     width: 150px;
     justify-self: center;
-    align-self:center;
-   
-   
-    
+    align-self:center;  
+    box-shadow: 0px 0px 25px rgb(255, 255, 255), 0px 4px 25px rgb(255, 255, 255), 0px -4px 25px rgb(255, 255, 255); 
 }
-.hero .container1{
-   background-image: url("https://static.vecteezy.com/system/resources/previews/001/937/601/original/online-education-application-learning-worldwide-on-computer-mobile-website-background-social-distance-concept-the-classroom-training-course-library-illustration-flat-vector.jpg");
-    background-size:cover;
-    width: 99vw;
-    opacity: 1;
-    background-position: no-repeat;
+/*********************************************** Sponser Styles **************************************************/
+.sponsers{
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+    margin: 2rem 7rem;
 }
-
-
-
-.hero .container1 {
-
-    
-    
-    display: grid;
-    grid-template-columns: repeat(2,1fr);
-    justify-content: center;
-    
-
+.sponsers img{
+    height: 75px;
+	width: 10%;
+	aspect-ratio: 3/2;
+	object-fit:contain;
+}
+/*********************************************** Outcomes Styles **************************************************/
+.outcomes {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    background-color: blueviolet;
 }
 
-
-@media (max-width: 768px) {
+/* --------------------------------------------- Media Query styles --------------------------------------------- */
+@media only screen and (min-width: 1200px) and (max-width: 1600px) {
     
+}
+@media only screen and (min-width: 992px) and (max-width: 1200px) {
+    .hero svg {
+        height: 70vh;
+        width: 400px;
+        left: 25px;
+        top: 5px;
+    }
     .hero .container1 {
-
-     
-        
+        left: 75px;
+        bottom: 110px;
+    }
+    .container1 h2 {
+        font-size: 25px;
+        font-weight: 700;
+    }
+    .container1 .search input {
+        width: 300px;
+        height: 35px;
+    }
+    .container1 .search {
+        padding: 2rem;
+    }
+    .container1 button{
+        height: 30px;
+        width: 100px;
+        font-size: x-small;
+        font-weight: 100;
+    }
+    
+}
+@media only screen and (min-width: 768px) and (max-width: 992px) {
+    .hero svg {
+        height: 60vh;
+        width: 350px;
+        left: 10px;
+        top: 5px;
+    }
+    .hero .container1 {
+        left: 60px;
+        bottom: 130px;
+    }
+    .container1 h2 {
+        font-size: 20px;
+        font-weight: 600;
+    }
+    .container1 .search input {
+        width: 250px;
+        height: 30px;
+        font-size: smaller;
+    }
+    .container1 .search {
+        padding: 1rem;
+    }
+    .container1 button{
+        height: 30px;
+        width: 80px;
+        font-size: 7px;
+        font-weight: 100px;
+    }
+    
+}
+@media only screen and (min-width: 576px) and (max-width: 768px) {
+    .hero {
+        grid-template-columns: repeat(2,1fr);    
+    }
+    .hero svg {
+        height: 60vh;
+        width: 300px;
+        left: 0px;
+        top: 0px;
+    }
+    .hero .container1 {
+        left: 0px;
+        bottom: -115px;
+    }
+    .container1 h2 {
+        font-size: 20px;
+        font-weight: 600;
+    }
+    .container1 .search input {
+        width: 250px;
+        height: 30px;
+        font-size: smaller;
+    }
+    .container1 .search {
+        padding: 1rem;
+    }
+    .container1 button{
+        height: 30px;
+        width: 80px;
+        font-size: 7px;
+        font-weight: 100px;
+    }
+    /* .hero .container1 {
         display: grid;
         grid-template-columns: repeat(1,1fr);
         justify-content:center;
         align-items: center;
         flex-direction: row-reverse;
-    
     }
     .hero .container1 svg{
         width: 300px;
         height: 300px;
     }
     .hero h2{
-    color: var(--main-color);
-    font-size: 20px;
-    font-style: normal;
-    font-weight: 700;
-    
+        color: var(--main-color);
+        font-size: 20px;
+        font-style: normal;
+        font-weight: 700;
     }
-
-
-}
-
-/* section1 ends */
-
-
-
-
-/* sponsersection starts */
-
-
-    .container .sponsers{
-    
-        display: flex;
-        justify-content:space-between;
-        align-items: center;
-        
-    }
-    
     .container .sponsers img{
-        height: 100px;
-    
-    }
-  
-    .container .sponsers #freecourses{
         height: 30px;
     }
-    .container .sponsers #real{
+    .container .sponsers svg{
         height: 30px;
+    } */
+}
+@media only screen and (min-width: 480px) and (max-width: 576px){
+    .hero {
+        display: block;
     }
-
-
-
-    @media (max-width: 768px) {
-        .container .sponsers img{
-            height: 30px;
-        
-        }
-        .container .sponsers svg{
-            height: 30px;
-        
-        }
-        /* sponsersection ends */
-    
-        .container .sponsers #freecourses{
-            height: 10px;
-        }
-        .container .sponsers #real{
-            height: 10px;
-        }
-    
-        
+    .hero svg{
+        display: none;
     }
-
-      /* sponsersection ends */
-
-
-      .purple {
-width: 98vw;
-height: 40vh;
-border-radius: 12px;
-display: grid;
-grid-template-columns: repeat(3,1fr);
-background: #4D2C5E;
-
-      }
-/* 
-      .box1{
-        background-color: red;
-        
-      }
-      .box2{
-        background-color:green;
-        
-      }
-      .box3{
-        background-color: orange;
-     
-      } */
-
-.box1, .box2, .box3{
-    display: flex;
-    align-items: center;
-    justify-content: space-evenly;
-    column-gap: 10px;
-    
+    .hero .container1 {
+        left: 0px;
+        bottom: -110px;
+    }
 }
-.box1 h3, .box2 h3, .box3 h3{
-    display: flex;
-    align-items: center;
-    color: white;
-    font-weight: bold;
-    font-size: 1.5rem; 
-    
-
+@media only screen and (min-width: 320px) and (max-width: 480px){
+    .hero svg{
+        display: none;
+    }
+    .hero .container1 {
+        left: 0px;
+        bottom: 0px;
+    }
 }
-.box1 p, .box2 p, .box3 p{
-    display: flex;
-    align-items: center;
-    color: white;
-    font-weight: 400; 
-    font-size: 0.9rem; 
-}
-.box1 .img1 img , .box2 .img2 img, .box3 .img3 img{
-    width:50px;
-    height:50px;
-    background-color: rgba(255, 255, 255, 0.20);
-    border-radius: 8px;
-    
+@media only screen and (max-width: 320px){
+    .hero svg{
+        display: none;
+    }
+    .hero .container1 {
+        left: 0px;
+        bottom: 0px;
+    }
 }
 
 
-
-
-@media (min-width:320px) and (max-width: 792px) {
-    .purple {
-        width: 98vw;
-        height: 20vh;
-        border-radius: 8px;
-        display: grid;
-        grid-template-columns: repeat(3,1fr);
-        background: #4D2C5E;
-        
-            }
-        
-        
-        .box1, .box2, .box3{
-            display: flex;
-            align-items: center;
-            justify-content: space-evenly;
-            column-gap: 10px;
-            
-        }
-        .box1 h3, .box2 h3, .box3 h3{
-            display: flex;
-            align-items: center;
-            color: white;
-            font-weight: bold;
-            font-size: 0.5rem; 
-            
-        
-        }
-        .box1 p, .box2 p, .box3 p{
-            display: flex;
-            align-items: center;
-            color: white;
-            font-weight: 400; 
-            font-size: 0.5rem; 
-        }
-        .box1 .img1 img , .box2 .img2 img, .box3 .img3 img{
-            width:50px;
-            height:50px;
-        }
-        
-    
-}
