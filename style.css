@@ -184,5 +184,12 @@ text-transform: capitalize;
 
       /* sponsersection ends */
 
+      .section{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        background-color: blueviolet;
+      
+    }
 
 
