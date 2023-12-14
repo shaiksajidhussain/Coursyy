@@ -41,6 +41,7 @@
     border-radius: 15px;
     border: 2px solid #339C9C;
     height: 40px;
+    
 }
 
 .search {
@@ -184,12 +185,45 @@ text-transform: capitalize;
 
       /* sponsersection ends */
 
-      .section{
-        display: flex;
-        flex-direction: row;
-        justify-content: space-evenly;
-        background-color: blueviolet;
-      
-    }
 
+      .purple {
+width: 98vw;
+height: 40vh;
+border-radius: 12px;
+display: grid;
+grid-template-columns: repeat(3,1fr);
+background: #4D2C5E;
 
+      }
+/* 
+      .box1{
+        background-color: red;
+        
+      }
+      .box2{
+        background-color:green;
+        
+      }
+      .box3{
+        background-color: orange;
+     
+      } */
+
+.box1, .box2, .box3{
+    display: flex;
+    align-items: center;
+    
+}
+.box1 h3, .box2 h3, .box3 h3{
+    display: flex;
+    align-items: center;
+    color: white;
+    font-weight: bold;  
+}
+.box1 p, .box2 p, .box3 p{
+    display: flex;
+    align-items: center;
+    color: white;
+    font-weight: 400; 
+    font-size: 1rem; 
+}
