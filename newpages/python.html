@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>View</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous" />
+    <style>
+        /* Head Starts*/
+        #tit {
+            text-align: center;
+            color: #17ACAC;
+            margin-top: 10px;
+            font-family: Font Awesome 5 Brands;
+            font-size: 40px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: normal;
+            text-transform: capitalize;
+        }
+
+        .topp {
+            display: flex;
+            justify-content: space-between;
+        }
+
+        /* Head ends*/
+
+        /* Hero starts*/
+        .container h4 {
+            color: #0A4A4A;
+            font-family: Istok Web;
+            font-size: 25px;
+            font-style: normal;
+            font-weight: 700;
+            line-height: normal;
+            text-transform: capitalize;
+        }
+
+        .box1 {
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .container {
+            width: 500px;
+            box-shadow: 1px 1px 20px 0px rgba(0, 0, 0, 0.5);
+        }
+
+        /* Hero ends*/
+    </style>
+</head>
+
+<body>
+
+    <div class="container">
+        <div class="container1">
+            <div class="topp">
+                <a href="index.html" style="margin-top: 10px;">
+                    <button type="button" class="btn btn-warning">Back</button>
+                </a>
+            </div>
+            <div class="heady">
+                <h4 id="tit">Coursyy</h4>
+            </div>
+        </div>
+
+        <!-- topends -->
+        <!-- Youtube starts -->
+        <br>
+
+        <div class="container2">
+            <h4 id="name">Python in 11 Hours</h4>
+            <iframe width="450" height="315" src="https://www.youtube.com/embed/l1nmr3QeohI?si=pT19bSDR0NsjUPRw" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>        </div>
+
+        <div class="box1">
+            <div class="dur">
+                <p>Duration: 10 Hours</p>
+                <p>Language: Telugu</p>
+            </div>
+        </div>
+
+        <div class="description">
+            <p id="introText">
+                <!-- Initial content -->
+               
+364,592 views  Nov 12, 2021  Learn in one video : Crash Course
+In this video, we are going to learn the complete core java all basics concepts step by step in detail in this video.
+
+This PlayList  :   
+
+ • Python Tutorial : Long Videos  
+
+
+            </p>
+
+            <p id="extraText" style="display: none;">
+                
+Intoduction: 0:01/10:15
+Installations: 10:16/18:04
+Comments: 18:09/25:15
+Variables: 25:24/41:02  
+Datatypes: 41:14/52:07
+Control statements(Introduction): 52:16/55:01
+Conditional statements: 55:04/1:11:08
+Looping statements: 1:11:18/1:30:51 
+Jumping statements: 1:30:59/1:39:26
+String: 1:39:34/2:00:06
+List: 2:00:15/2:13:37
+Tuple: 2:13:46/2:26:07
+Dictonary: 2:26:12/2:38:35
+Set: 2:38:42/2:53:53 
+Functions: 2:54:00/3:09:36
+File handling: 3:09:43/3:18:41
+Error handling: 3:18:47/3:29:09
+Pop vs Oop: 3:29:18/3:33:54
+         Oop Concept
+Class&Object: 3:33:56/3:44:46
+Inheritance: 3:44:56/3:59:31
+Encapsulation,Polymorphism,Data abstraction: 3:59:40/4:13:47
+Webscraping: 4:16:30/5:48:38
+Datascience: 5:59:14/6:27:09
+Logical Questions: 6:28:17/9:43:53
+</p>
+            </p>
+        </div>
+
+        <script>
+            function toggleReadMore() {
+                const { style: introStyle } = document.getElementById('introText');
+                const { style: extraStyle } = document.getElementById('extraText');
+
+                introStyle.display = introStyle.display === 'none' ? 'block' : 'none';
+                extraStyle.display = extraStyle.display === 'none' ? 'block' : 'none';
+            }
+
+         
+
+            // Call the function to update details
+            
+        </script>
+
+    </div>
+    <!-- topstarts -->
+
+    <!-- Youtube ends -->
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+        crossorigin="anonymous"></script>
+    <script src="script.js"></script>
+
+</body>
+
+</html>

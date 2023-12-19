@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>View</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous" />
+    <style>
+        /* Head Stars*/
+        #tit {
+            text-align: center;
+            color: #17ACAC;
+            margin-top: 10px;
+            font-family: Font Awesome 5 Brands;
+            font-size: 40px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: normal;
+            text-transform: capitalize;
+        }
+
+        .topp {
+            display: flex;
+            justify-content: space-between;
+
+        }
+
+
+        /* Head ends*/
+
+
+        /* Hero starts*/
+        .container h4 {
+            color: #0A4A4A;
+            font-family: Istok Web;
+            font-size: 25px;
+            font-style: normal;
+            font-weight: 700;
+            line-height: normal;
+            text-transform: capitalize;
+        }
+
+        .box1{
+            display: flex;
+            justify-content: space-between;
+        }
+        .container{
+            width: 500px;
+box-shadow: 1px 1px 20px 0px rgba(0, 0, 0, 0.5);
+        }
+
+
+        /* Hero ends*/
+    </style>
+</head>
+
+<body>
+
+
+
+
+    <div class="container">
+        <div class="container1">
+            <div class="topp">
+
+                <a href="index.html" style="margin-top: 10px;">
+                    <button type="button" class="btn btn-warning">Back</button>
+                </a>
+            </div>
+            <div class="heady">
+                <h4 id="tit">Coursyy</h4>
+
+            </div>
+
+        </div>
+
+        <!-- topends -->
+        <!-- Youtube starts -->
+        <br>
+
+        <div class="container2">
+            <h4>Sigma Web Development</h4>
+            <iframe width="450" height="315"
+                src="https://www.youtube.com/embed/videoseries?si=YrpVBs3FJc3LwX5x&amp;list=PLu0W_9lII9agq5TrH9XLIKQvv0iaF2X3w"
+                title="YouTube video player" frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                allowfullscreen></iframe>
+
+                
+        </div>
+        <div class="box1">
+            <div class="dur">
+                <p>Duration: 25mins</p>
+                <p>Language:English</p>
+            </div>
+         
+
+        </div>
+
+
+        <div class="description">
+            <p id="introText">
+                <!-- Initial content -->
+                PLAY ALL
+                Sigma Web Development Course - Web Development Tutorials in Hindi 🗿
+                CodeWithHarry
+                79 videos 2,003,841 views Updated yesterday
+                        
+             
+            </p>
+        
+            <p id="extraText" style="display: none;">
+                
+                Play all
+                Shuffle
+                Welcome to the Sigma Web Development Course - Web Development Tutorials in Hindi playlist! 🗿
+                        
+                📚 About this Playlist:
+                Are you interested in learning web development but find most tutorials in English hard to follow? Look no further! This course is entirely in Hindi and is designed to take you from beginner to pro, one step at a time.
+                        
+                👨‍💻 Who is this for?
+                        
+                Beginners who want to dive into web development
+                Intermediate developers looking to sharpen their skills
+                Anyone who prefers learning in Hindi
+                🛠️ What Will You Learn? <p onclick="toggleReadMore()" style="color:green">......Read More</p>
+            </p>
+        
+           
+        </div>
+        
+        <script>
+            function toggleReadMore() {
+                var introText = document.getElementById('introText');
+                var extraText = document.getElementById('extraText');
+        
+                if (extraText.style.display === 'none') {
+                    extraText.style.display = 'block';
+                } else {
+                    extraText.style.display = 'none';
+                }
+            }
+
+            function updateVideoDetails() {
+                var videoTitle = document.getElementById('videoTitle');
+                var videoIframe = document.getElementById('videoIframe');
+                var videoDuration = document.getElementById('videoDuration');
+                var videoLanguage = document.getElementById('videoLanguage');
+
+                // Update the content dynamically
+                videoTitle.innerText = "Sanjuuu";
+                videoDuration.innerText = "New Duration: 30mins";
+                videoLanguage.innerText = "New Language: Spanish";
+
+                // Update iframe src
+                var newSrc =
+                    "https://www.youtube.com/embed/videoseries?si=NEW_VIDEO_ID&list=PLu0W_9lII9agq5TrH9XLIKQvv0iaF2X3w";
+                videoIframe.src = newSrc;
+            }
+
+            // Call the function to update details
+            updateVideoDetails();
+        </script>
+        
+
+    </div>
+    <!-- topstarts -->
+
+
+    <!-- Youtube ends -->
+
+
+
+
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+        crossorigin="anonymous"></script>
+    <script src="script.js"></script>
+    
+</body>
+
+</html>
