@@ -521,12 +521,17 @@
     justify-content: space-evenly;
     flex-wrap: wrap;
 }
+.premium .card{
+   margin-top: 10px;
+}
 
 #premiumcourses{
     font-weight: bolder;
     margin-left: 25px;
     color: #004949;
 }
+
+
 
 /* premium ends */
 
@@ -559,7 +564,26 @@
     color: #004949;
 }
 
-
-
-
 /* founder ends */
+
+/* view starts */
+
+.view{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.view a{
+    color: black;
+    font-weight: bolder;
+    text-decoration: none;
+    text-decoration: none;
+
+}
+
+
+/* view ends */
+
+
+
