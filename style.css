@@ -130,6 +130,8 @@
 	aspect-ratio: 3/2;
 	object-fit:contain;
 }
+
+
 /*********************************************** Outcomes Styles **************************************************/
 .outcomes {
     display: flex;
@@ -520,7 +522,7 @@
 
 /* premium starts */
 
-.premium{
+/* .premium{
     display: flex;
     justify-content: space-evenly;
     flex-wrap: wrap;
@@ -533,7 +535,13 @@
     font-weight: bolder;
     margin-left: 25px;
     color: #004949;
+} */
+
+.premium :hover{
+    transform: scale(1.01);
 }
+
+
 
 
 
@@ -588,6 +596,7 @@
 
 
 /* view ends */
+
 
 
 
