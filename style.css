@@ -387,8 +387,9 @@
 
 /* purple starts */
 .purple {
-    width: 98vw;
+    width: 95vw;
     height: 20vh;
+    margin-left: 12px;
     border-radius: 12px;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -483,6 +484,7 @@
 .categories {
     display: flex;
     justify-content: space-around;
+    flex-wrap: wrap;
 }
 
 .categories div {
