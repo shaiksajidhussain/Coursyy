@@ -215,9 +215,8 @@
             <div class="hero">
                 <div class="container1">
                     <h2>We only need your time</h2>
-                    <div class="search">
-                        <input type="text" name="" id="" placeholder="Search for courses" />
-                    </div>
+                    <br>
+
                     <button id="visitcourses">Visit Courses</button>
                 </div>
                 <svg viewBox="0 0 689 410" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -1461,7 +1460,7 @@
     </div>
     <br>
 
-    <div class="premium">
+    <div class="premium" id="premium">
         <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
 
             <div class="carousel-inner">
@@ -1646,17 +1645,22 @@
         crossorigin="anonymous"></script>
 
         <script>
-            let visitcourses = document.getElementById('visitcourses');
-            visitcourses.addEventListener('click',()=>{
-                alert("Still it is updating....")
-            })
 
+  
         function scrollToSection(founders) {
         var section = document.getElementById('founders');
         if (section) {
             section.scrollIntoView();
         }
     }
+
+    document.getElementById("visitcourses").addEventListener("click", function() {
+            var premiumDiv = document.getElementById("premium");
+
+            premiumDiv.scrollIntoView({ behavior: 'smooth' });
+        });
+
+
     
         </script>
 </body>
